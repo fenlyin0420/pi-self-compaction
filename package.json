@@ -1,0 +1,23 @@
+{
+	"name": "pi-self-compaction",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "Pi extension: let the model see its context usage and compact on its own schedule instead of waiting for Pi's forced threshold compaction",
+	"license": "MIT",
+	"keywords": ["pi-package", "pi", "pi-coding-agent", "compaction", "context"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"scripts": {
+		"check": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"typebox": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "^1.0.1",
+		"@types/node": "^25.0.0",
+		"typescript": "^5.9.3"
+	}
+}
